@@ -40,3 +40,19 @@ body {
     cursor: pointer;
 }
 
+.status-wrapper {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    margin-top: 25px;
+    font-size: 25px
+}
+
+.reset {
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: #f2ebd3
+}
+
