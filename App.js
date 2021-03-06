@@ -24,6 +24,9 @@ const handleWin = (letter) => {
 }
 
 
+// consider adding classlist to winning path so color can be changed on winning symbols
+// consider adding function/styling so that winning games can be stored and displayed on the sides of the board
+
 const checkGameStatus = () => {
     const topLeft = cellDivs[0].classList[1];
     const topMiddle = cellDivs[1].classList[1]
