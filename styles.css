@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +23,22 @@ body {
     text-align: center;
 }
 
+.status-wrapper {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    margin-top: 25px;
+    font-size: 25px
+}
+
+.reset {
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: #f2ebd3
+}
+
 .game-grid {
     display: grid;
     background-color: #646161;
@@ -40,19 +57,21 @@ body {
     cursor: pointer;
 }
 
-.status-wrapper {
-    display: flex;
-    justify-content: space-around;
-    height: 30px;
-    margin-top: 25px;
-    font-size: 25px
+
+/* if using symbols, assign symbol as value of content */
+.x::before {
+    content: 'X';
+    font-size: 200px;
 }
 
-.reset {
-    cursor: pointer;
+.o::before {
+    content: 'O';
+    color: #f2ebd3;
+    font-size: 200px;
 }
 
-.reset:hover {
-    color: #f2ebd3
+.status span {
+    color: #f2ebd3;
 }
+
 
